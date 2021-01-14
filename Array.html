@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Masukkan buah atau sayur</p>
+    <label for="txtInput">Input nama item</label>
+    <input type="text" id="txtItem" />
+    Masukkan jenis
+    <select name="" id="listJenisItem">
+      <option value="buah">Buah Buahan</option>
+      <option value="sayur">Sayur Sayuran</option>
+    </select>
+    <button
+      id="btnAddItem"
+      onclick="tambahItem(document.getElementById('txtItem').value,document.getElementById('listJenisItem').value)"
+    >
+      Tambah
+    </button>
+
+    <p>Jenis Buah Tropis</p>
+    <label for="txtBuah">Masukan buah</label>
+    <input type="text" id="txtBuah" />
+    <button
+      id="addBuah"
+      onclick="tambahBuah(document.getElementById('txtBuah').value)"
+    >
+      Tambah
+    </button>
+    <ul>
+      <div id="buah"></div>
+    </ul>
+
+    <p>Jenis sayuran Tropis</p>
+    <label for="txtSayur">Masukan sayur</label>
+    <input type="text" id="txtSayur" />
+    <button
+      id="addSayur"
+      onclick="tambahSayur(document.getElementById('txtSayur').value)"
+    >
+      Tambah
+    </button>
+    <ul>
+      <div id="sayuran"></div>
+    </ul>
+
+    <script src="array.js"></script>
+  </body>
+</html>
